@@ -37,6 +37,7 @@ export default function NotesScreen({ navigation }) {
       }
       await AsyncStorage.setItem('notes', JSON.stringify(newNotes));
       setNotes(newNotes);
+      console.log('hello');
       showMessage({
         message: 'Note has been updated',
         type: 'success',

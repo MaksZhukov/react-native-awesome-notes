@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
+import FlashMessage from 'react-native-flash-message';
 
 import NoteScreen from './screens/NoteScreen';
 import NotesScreen from './screens/NotesScreen';
@@ -38,6 +39,7 @@ export default function App() {
           <Stack.Screen name="Info" component={InfoScreen} />
         </Stack.Navigator>
       </NavigationContainer>
+      <FlashMessage position="top" />
     </>
   );
 }
